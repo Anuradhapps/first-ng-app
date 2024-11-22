@@ -14,5 +14,12 @@ export const routes: Routes = [
     loadComponent: () => {
       return import('./todos/todos.component').then((m) => m.TodosComponent);
     },
+  },
+  {
+    path: 'profile',
+    pathMatch: 'full',
+    loadComponent: () => {
+      return import('./profile/profile.component').then((m) => m.ProfileComponent);
+    },
   }
 ];
